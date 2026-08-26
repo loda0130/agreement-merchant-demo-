@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商家端协议中心</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <main class="workspace">
+        <header class="header">
+          <div class="header-left">
+            <a class="brand" href="#/merchant/agreements" aria-label="商家协议中心首页">
+              <span class="brand-mark">M</span>
+              <span>商家后台</span>
+            </a>
+            <div class="header-divider"></div>
+            <div class="crumb"><span>商家中心</span><span class="slash">/</span><strong id="crumb-current">协议中心</strong></div>
+          </div>
+          <div class="header-actions">
+            <button class="icon-button" id="notice-button" aria-label="通知"><span class="notification-dot"></span>♧</button>
+            <button class="help-button">? <span>帮助中心</span></button>
+            <button class="profile" id="profile-button"><span class="avatar">商</span><span>示例商家</span><span class="chevron">⌄</span></button>
+          </div>
+        </header>
+
+        <section class="content" id="app-content"></section>
+      </main>
+    </div>
+    <div class="toast" role="status" aria-live="polite" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
